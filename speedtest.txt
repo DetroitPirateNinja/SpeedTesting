@@ -1,0 +1,39 @@
+{
+    "type": "result",
+    "timestamp": "2021-09-30T10:00:34Z",
+    "ping": {
+        "jitter": 1.2170000000000001,
+        "latency": 33.646000000000001
+    },
+    "download": {
+        "bandwidth": 50312536,
+        "bytes": 555485312,
+        "elapsed": 12106
+    },
+    "upload": {
+        "bandwidth": 41217825,
+        "bytes": 597710922,
+        "elapsed": 15010
+    },
+    "isp": "FreedomNet",
+    "interface": {
+        "internalIp": "192.168.1.63",
+        "name": "eno1",
+        "macAddr": "3C:52:82:00:54:40",
+        "isVpn": false,
+        "externalIp": "207.174.252.135"
+    },
+    "server": {
+        "id": 3798,
+        "name": "Daystarr Communications",
+        "location": "Owosso, MI",
+        "country": "United States",
+        "host": "speedtest1.daystarr.net",
+        "port": 8080,
+        "ip": "69.41.0.18"
+    },
+    "result": {
+        "id": "9e409398-c6ab-4a92-84da-38d6079388d2",
+        "url": "https://www.speedtest.net/result/c/9e409398-c6ab-4a92-84da-38d6079388d2"
+    }
+}
