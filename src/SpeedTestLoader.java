@@ -14,6 +14,9 @@ import java.io.FileReader;
 import java.util.Iterator;
 import java.util.Map;
 
+// Database related
+import java.sql.*;
+
 // JSON Libraries
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -102,22 +105,38 @@ public class SpeedTestLoader
             // Print out the download information
             System.out.println("Download elapsed = " + downloadElapsed);
 
+            // Connect to the database
+            Class.forName("com.mysql.jdbc.Driver");
+
+            Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.1.63:3306/statistics",
+                                                    "kevin",
+                                                 "MyBoxerPuppy#25");
+
+            Statement stmt = conn.createStatement();
+
+            ResultSet rs = stmt.executeQuery("select * from bandwidthTest;");
+
+            ResultSetMetaData rsMetaData = rs.getMetaData();
+
+            int count = rsMetaData.getColumnCount();
+
+            for (int i = 1; i <= count; i++)
+            {
+                System.out.println(rsMetaData.getColumnName(i));
+            }
+
+            // Create the insert statement
+
+            // Close the database connection
+
+            // Close the file
+
+
         }
         catch (Exception e)
         {
             e.printStackTrace();
         }
-
-        // Read the file
-
-        // Connect to the database
-
-        // Create the insert statement
-
-        // Close the database connection
-
-        // Close the file
-
         // Done
     }
 
