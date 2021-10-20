@@ -106,7 +106,7 @@ public class SpeedTestLoader
             System.out.println("Download elapsed = " + downloadElapsed);
 
             // Connect to the database
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("org.gjt.mm.mysql.Driver.class");
 
             Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.1.63:3306/statistics",
                                                     "kevin",
