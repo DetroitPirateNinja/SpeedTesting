@@ -16,6 +16,7 @@ import java.util.Map;
 
 // Database related
 import java.sql.*;
+import org.gjt.mm.mysql.Driver;
 
 // JSON Libraries
 import org.json.simple.JSONArray;
@@ -106,7 +107,7 @@ public class SpeedTestLoader
             System.out.println("Download elapsed = " + downloadElapsed);
 
             // Connect to the database
-            Class.forName("org.gjt.mm.mysql.Driver.class");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
             Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.1.63:3306/statistics",
                                                     "kevin",
