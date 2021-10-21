@@ -15,7 +15,7 @@ public class Constants
     public static String UPLOAD_ELAPSED        = "elapsed";
     public static String ISP                   = "isp";
     public static String INTERFACE             = "interface";
-    public static String INTERFACE_INTERNAL_IP = "interalIp";
+    public static String INTERFACE_INTERNAL_IP = "internalIp";
     public static String INTERFACE_NAME        = "name";
     public static String INTERFACE_MAC_ADDR    = "macAddr";
     public static String INTERFACE_IS_VPN      = "isVpn";
